@@ -14,7 +14,7 @@ class Question(models.Model):
         return self.answer_set.all()
 
 
-class Answers(models.Model):
+class Answer(models.Model):
     text = models.CharField(max_length=200)
     correct = models.BooleanField(default=False)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
