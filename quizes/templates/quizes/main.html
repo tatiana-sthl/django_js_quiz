@@ -7,10 +7,17 @@
 {% endblock scripts %}
 
 {% block title %}
-home
+Home
 {% endblock title %}
 
 {% block content %}
+
+  <hr>
+
+  <div class="h1 ">Pick a Quiz</div>
+  <div><em>Spoiler alert : it's all about woman.</em></div>
+
+  <hr>
 
   <div class="modal fade" id="quizStartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -29,9 +36,6 @@ home
       </div>
     </div>
   </div>
-
-  <div class="h1"> Quiz List</div>
-  <hr>
 
   {% for obj in object_list %}
     <button 
